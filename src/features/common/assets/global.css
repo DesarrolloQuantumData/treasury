@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: FontAwesome6ProRegular;
+  src: url(./fonts/FontAwesome6ProRegular400.otf);
+}
+
+@font-face {
+  font-family: FontAwesome6ProSolid;
+  src: url(./fonts/FontAwesome6ProSolid900.otf);
+}
+
+.backgroundLogin {
+  background-image: url('/src/features/img/BG_LOGIN.png');
+  background-repeat: no-repeat;
+}
+
+.icon-user::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f007';
+}
+
+.icon-key::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f084';
+}
+
+.icon-eye::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f06e';
+}
+
+.icon-eye-slash::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f070';
+}
+
+.icon-arrow-right::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f061';
+}
+
+.icon-bell::before {
+  font-family: FontAwesome6ProSolid !important;
+  content: '\f0f3';
+}
+
+.icon-chevron-down::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f078';
+}
+
+.icon-file-pen::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f31c';
+}
+
+.icon-file-lines::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f15c';
+}
+
+.icon-hashtag::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\23';
+}
+
+.icon-percent::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\25';
+}
+
+.icon-check::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f00c';
+}
+
+.icon-circle-xmark::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f057';
+}
+
+.icon-circle-plus::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f055';
+}
+
+.icon-pen-to-square::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f044';
+}
+
+.icon-circle-down::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f358';
+}
+
+.icon-caret-right::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f0da';
+}
+
+.icon-caret-left::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f0d9';
+}
+
+.icon-ellipsis::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f141';
+}
+
+.icon-address-card::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f2bb';
+}
+
+.icon-folder-open::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f07c';
+}
+
+.icon-lightbulb::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f0eb';
+}
+
+.icon-chevron-right::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f054';
+}
+
+.icon-chevron-left::before {
+  font-family: FontAwesome6ProRegular !important;
+  content: '\f053';
+}
+
+.button {
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: #d3f5d3;
+  transition: width 0.3s ease;
+}
+
+.button:hover {
+  color: #a2d033;
+  border-color: #a2d033;
+}
+
+.button:hover::before,
+.button:hover::after {
+  width: 100%;
+}
+
+.switchOnColor {
+  background-color: #a2d033;
+  border-radius: 9999px;
+  border: 2px solid #dee1ed;
+}
+
+.switchOffColor {
+  background-color: primaryBorder;
+  border-radius: 9999px;
+  border: 2px solid #dee1ed;
+}
+
+.card {
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before,
+.card::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  background-color: #cce6e3;
+  transition: all;
+}
+
+.card:hover {
+  border-color: #a2d033;
+}
+
+.card:hover::before,
+.card:hover::after {
+  width: 100%;
+}

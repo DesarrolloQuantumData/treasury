@@ -1,0 +1,57 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    // "plugin:@typescript-eslint/recommended",
+    "plugin:jsx-a11y/recommended",
+    "standard",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks",
+    "simple-import-sort",
+    "jsx-a11y",
+    "@typescript-eslint",
+    "prettier"
+  ],
+  "globals": {
+    "React": "readonly",
+    "JSX": "readonly"
+  },
+  "rules": {
+    "import/newline-after-import": "error",
+    "no-unused-vars": "off",
+    "quotes": "error",
+    "react/jsx-sort-props": "error",
+    "react/prop-types": "off",
+    "@typescript-eslint/consistent-type-imports": "error",
+    "react/self-closing-comp": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^require$" }],
+    "jsx-a11y/media-has-caption": "off"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}
+
+
+
